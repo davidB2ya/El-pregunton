@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntón</title>
+    <link rel="shortcut icon" href="./assets/favicon.png">
+</head>
+
+<body>
+
+    <main class="dark:bg-gray-800 font-mono bg-white relative overflow-hidden cursor-default h-screen">
+        <div class="hidden md:block absolute -bottom-32 -left-32 w-96 h-96">
+            <div class="absolute text-extrabold text-xl right-12 z-20 text-start top-1/4 ">
+                <span class="text-7xl">
+                    💻
+                </span>
+                <p>
+                    Desarrollado por
+                </p>
+                <a href="https://david-bedoya.vercel.app/" class="underline">
+                    David Bedoya
+                </a>
+            </div>
+            <svg viewBox="0 0 200 200" class="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#045081"
+                    d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,74.1,43.2C66.7,57.2,57.6,70.6,45,78.1C32.4,85.6,16.2,87.1,0.7,85.9C-14.8,84.7,-29.6,80.9,-43.9,74.4C-58.3,67.9,-72,58.7,-79.8,45.9C-87.7,33,-89.5,16.5,-88.9,0.3C-88.4,-15.9,-85.4,-31.7,-78.1,-45.4C-70.8,-59.1,-59.1,-70.6,-45.3,-77.9C-31.6,-85.3,-15.8,-88.5,-0.3,-88.1C15.3,-87.6,30.5,-83.5,44.7,-76.4Z"
+                    transform="translate(100 100)">
+                </path>
+            </svg>
+        </div>
+        <header class="h-24 sm:h-32 flex items-center z-30 w-full">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <div class="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center">
+                    <img src="https://i.ibb.co/2M675j0/Logo-David-04.png" alt="logo" class="w-14 h-14 cursor-pointer" />
+                </div>
+                <div class="flex items-center">
+                    <nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+                        <a href="./views/intruction/intruction.html" class="py-2 px-6 flex hover:text-black">
+                            Instrucciones
+                        </a>
+                        <a href="https://david-bedoya.vercel.app/" class="py-2 px-6 flex hover:text-black">
+                            Contáctame
+                        </a>
+                    </nav>
+                    <button class="lg:hidden flex flex-col ml-4">
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="flex relative z-20 items-center">
+            <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4">
+                <div class="flex flex-col">
+                    <p class="text-3xl my-6 text-center dark:text-white">
+                        Bienvenidos al Preguntón 🧠
+                    </p>
+                    <h2
+                        class="max-w-3xl text-5xl md:text-6xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2">
+                        Un juego de preguntas y respuestas.Presione el botón para comenzar.
+                    </h2>
+                    <div class="flex items-center py-6 mx-auto">
+                        <a href="./views/game/view-game.html"><button
+                                class="px-6 py-2 text-2xl transition ease-in duration-200  rounded-lg hover:bg-gray-800 border-2 border-gray-900 focus:outline-none"
+                                id="play">👉🏻</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <div class="mb-6">
+                <label for="username-success" class="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">Your name</label>
+                <input type="text" id="username-success" class="bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-100 dark:border-green-400" placeholder="Bonnie Green">
+                <p class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium">Alright!</span> Username available!</p>
+            </div>
+            <div>
+                <label for="username-error" class="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Your name</label>
+                <input type="text" id="username-error" class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400" placeholder="Bonnie Green">
+                <p class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span> Username already taken!</p>
+            </div> -->
+</body>
+
+<script src="./app.js" type="module"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</html>
+<!DOCTYPE html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="flex-col dark:bg-gray-800 font-mono bg-white relative cursor-default h-full">
+        <header class="h-24 sm:h-32 flex items-center z-30 w-full">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <div class="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center">
+                    <a href="../../index.html"><button
+                            class="px-6 py-2 transition ease-in duration-200 rounded-lg hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none"
+                            id="back">👈🏻 </button></a>
+                </div>
+                <div class="flex items-center">
+                    <nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+                        <a href="../intruction/intruction.html" class="py-2 px-6 flex hover:text-black">
+                            Instrucciones
+                        </a>
+                        <a href="../board/board.html" class="py-2 px-6 flex hover:text-black">
+                            Tablero
+                        </a>
+                        <a href="https://david-bedoya.vercel.app/" class="py-2 px-6 flex hover:text-black">
+                            Contáctame
+                        </a>
+                    </nav>
+                    <button class="lg:hidden flex flex-col ml-4">
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </header>
+        <section class="flex items-center justify-center">
+            <div id="quiz" class="quiz ">
+                <span id="round"></span>
+                <h1 id="question"></h1>
+                <div id="choices"></div>
+                <hr style="margin-top: 50px" />
+                <footer>
+                    <p id="progress">Pregunta x / y</p>
+                </footer>
+            </div>
+            <div class="flex-col items-center justify-between gap-6 h-full my-20" id="user">
+                <img alt="logo" src="../../assets/favicon.png"
+                    class="flex items-center justify-center mx-auto mb-6 w-32 h-auto" />
+                <span>Ya casi empezamos solo ingrese su Nickname</span>
+                <div class="flex gap-10 mt-6">
+                    <input type="text" placeholder="Nickname" value="" id="nickname"
+                        class="bg-gray-50 border border-gray-500 text-gray-900 placeholder-gray-700 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-100 dark:border-gray-400" />
+                    <button
+                        class="px-6 py-2 transition ease-in duration-200 rounded-lg hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none"
+                        id="play">Comenzar</button>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-800 w-64 m-auto" id="modal">
+                <div class="w-full h-full text-center">
+                    <div class="flex h-full flex-col justify-between">
+                        <p class="text-gray-800 dark:text-gray-200 text-xl font-bold mt-4">
+                            Excelente 
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs py-2 px-6">
+                            Desea continuar jugando o prefiere salir?
+                        </p>
+                        <div class="flex items-center justify-between gap-4 w-full mt-8">
+                            <button id="continue" type="button"
+                                class="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                Continuar
+                            </button>
+                            <button type="button"
+                                class="py-2 px-4  bg-white hover:bg-gray-100 focus:ring-blue-500 focus:ring-offset-blue-200 text-blue-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                Salir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="./game.js" type="module"></script>
+<script src="./app.js" type="module"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</html>
