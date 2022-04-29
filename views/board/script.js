@@ -2,6 +2,7 @@ let board = document.getElementById('board');
 
 async function showPlayers() {
     const baseUrl = "http://localhost:3001"
+    // const baseUrl = "https://preguntonback.herokuapp.com"
     const response = await fetch(`${baseUrl}/api/players/all-players`, {
         method: 'GET',
         headers: {
