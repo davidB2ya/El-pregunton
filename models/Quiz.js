@@ -1,11 +1,12 @@
 //@ts-check
 import { Question } from "./Question.js";
 import { UI } from "./UI.js";
+import { saveProgress } from "../data/request.js";
 
 const ui = new UI();
 
-// let modal = document.getElementById('modal')
-// let quizcontainer = document.getElementById('quiz')
+let quizcontainer = document.getElementById('quiz')
+let gameOver = document.getElementById('gameOver')
 
 export class Quiz {
   score = 0;
@@ -27,32 +28,27 @@ export class Quiz {
     return this.questions[this.questionIndex];
   }
 
-  nextRound(){
-    this.questionIndex = 0
-  }
-
   isEnded() {
     if (this.questions.length === this.questionIndex) {
-      return true;
+      const player = localStorage.getItem('Player')
+      saveProgress(player, this.score)
+      return true
     }
-    // return this.questions.length === this.questionIndex;
+
   }
+
   guess(answer) {
     if (this.getQuestionIndex().correctAnswer(answer)) {
       this.score = this.score + 5
+      this.questionIndex++;
+      return true
     }
-    this.questionIndex++;
+    else {
+      quizcontainer.style.display = "none"
+      gameOver.style.display = "block"
+      const player = localStorage.getItem('Player')
+      saveProgress(player, 0)
+      return false
+    }
   }
-  // guess(answer) {
-  //   if (this.getQuestionIndex().correctAnswer(answer)) {
-  //     this.score++;
-  //     quizcontainer.style.display = "none"
-  //     modal.style.display = "block"
-  //   }
-  //   else {
-  //     quizcontainer.style.display = "none"
-  //     ui.showScores(this.score)
-  //   }
-  //   this.questionIndex++;
-  // }
 }

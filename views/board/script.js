@@ -11,9 +11,6 @@ async function showPlayers() {
     });
 
     const data = await response.json();
-    console.log(data)
-    console.log(data.message.length)
-    console.log(data.status)
 
     if (data.status === 200) {
         for (let i = 0; i < data.message.length; i++) {
@@ -23,10 +20,10 @@ async function showPlayers() {
                 playerEl.classList.add('project')
     
                 const playerInnerHTML = `
-                    <div class="flex items-center justify-between gap-6 h-full border p-4 rounded-lg mx-20 mt-4">
-                        <h3 class="name">${data.message[i].nickname}</h3>
-                        <span class="">${data.message[i].historyScore}</span>
-                        <span class="">${data.message[i].attempts}</span>
+                    <div class="flex items-center justify-between h-full border p-4 rounded-lg mx-20 mt-4">
+                        <h3 class="w-24">${data.message[i].nickname}</h3>
+                        <span class="w-24">${data.message[i].historyScore}</span>
+                        <span class="w-24">${data.message[i].attempts}</span>
                     </div>
                     `
                 playerEl.innerHTML = playerInnerHTML

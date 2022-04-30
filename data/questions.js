@@ -6,7 +6,6 @@ export const randomData = () => {
   let count = 1;
   while (list.length < 5) {
     const num = Math.floor(Math.random() * (data.length - 1)) + 1;
-    console.log(num)
     if (data[num].category === count) {
       list.push(data[num])
       count++
@@ -16,7 +15,6 @@ export const randomData = () => {
 }
 
 const info = randomData()
-console.log(info)
 
 export const questions = info.map(
   (question) =>

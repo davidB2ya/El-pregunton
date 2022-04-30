@@ -65,24 +65,22 @@
                         id="play">Comenzar</button>
                 </div>
             </div>
-            <div class="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-800 w-64 m-auto" id="modal">
+            <div class="hidden shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-800 w-64 m-auto" id="gameOver">
                 <div class="w-full h-full text-center">
                     <div class="flex h-full flex-col justify-between">
                         <p class="text-gray-800 dark:text-gray-200 text-xl font-bold mt-4">
-                            Excelente 
+                            Upss!
                         </p>
                         <p class="text-gray-600 dark:text-gray-400 text-xs py-2 px-6">
-                            Desea continuar jugando o prefiere salir?
+                            Perdió la partida y todo el acumulado
                         </p>
-                        <div class="flex items-center justify-between gap-4 w-full mt-8">
-                            <button id="continue" type="button"
-                                class="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                Continuar
-                            </button>
-                            <button type="button"
-                                class="py-2 px-4  bg-white hover:bg-gray-100 focus:ring-blue-500 focus:ring-offset-blue-200 text-blue-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                Salir
-                            </button>
+                        <div class="flex items-center justify-center w-full mt-8">
+                            <a href="./view-game.html">
+                                <button id="continue" type="button"
+                                    class="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                    Apectar
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
