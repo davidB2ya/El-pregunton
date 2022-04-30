@@ -1,14 +1,9 @@
 import { main } from "./game.js"
-import { Quiz } from "../../models/Quiz.js";
-import { questions } from "../../data/questions.js";
 
 let play = document.getElementById('play')
 let quizcontainer = document.getElementById('quiz')
 let nickname = document.getElementById('nickname')
 let user = document.getElementById('user')
-let continueGame = document.getElementById('continue')
-let modal = document.getElementById('modal')
-let gameOver = document.getElementById('gameOver')
 
 
 let round = 1
@@ -50,22 +45,3 @@ play.addEventListener('click', () => {
     }
 
 })
-
-// continueGame.addEventListener('click', () => {
-//     quizcontainer.style.display = "block"
-//     modal.style.display = "none"
-
-// })
-
-// gameOver.addEventListener('click', () => {
-//     quizcontainer.style.display = "block"
-//     modal.style.display = "none"
-
-// })
-
-// accepts.addEventListener('click', () => {
-//     round++
-//     const quiz = new Quiz(questions);
-//     quiz.nextRound()
-//     main()
-// })

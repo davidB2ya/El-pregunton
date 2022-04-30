@@ -1,10 +1,10 @@
 #quiz {
-    background: #d4ddf7;
-    width     : 30rem;
-    padding   : 2rem;
-    text-align: center;
-    border-radius : 2rem;
-    display: none;
+    background   : #d4ddf7;
+    width        : 30rem;
+    padding      : 2rem;
+    text-align   : center;
+    border-radius: 2rem;
+    display      : none;
 }
 
 h1 {
@@ -25,13 +25,13 @@ h1 {
     margin-top: 30px;
 }
 
-#choices{
-    display: flex;
+#choices {
+    display       : flex;
     flex-direction: column;
-    gap: 1rem;
-    align-items : center;
-    justify-items: center;
-    margin-top: 1em;
+    gap           : 1rem;
+    align-items   : center;
+    justify-items : center;
+    margin-top    : 1em;
 }
 
 .button {
@@ -40,7 +40,7 @@ h1 {
     font-size       : 20px;
     color           : #fff;
     border-radius   : .3rem;
-    padding: .5rem;
+    padding         : .5rem;
 }
 
 #progress {
@@ -63,6 +63,6 @@ h1 {
     outline: 0;
 }
 
-#modal{
+#modal {
     display: none;
 }

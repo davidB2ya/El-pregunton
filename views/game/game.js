@@ -14,12 +14,6 @@ const renderPage = (quiz, ui) => {
         ui.showChoices(quiz.getQuestionIndex().choices, (currenChoice) => {
             quiz.guess(currenChoice)
             renderPage(quiz, ui);
-            // if(quiz.guess(currenChoice) === true) {
-            //     renderPage(quiz, ui);
-            // }else {
-            //     quiz.isEnded()
-            //     // quiz.showYoulost(0)
-            // }
         });
     }
 

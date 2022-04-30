@@ -18,7 +18,7 @@ async function showPlayers() {
             function addPlayer() {
                 const playerEl = document.createElement('div')
                 playerEl.classList.add('project')
-    
+
                 const playerInnerHTML = `
                     <div class="flex items-center justify-between h-full border p-4 rounded-lg mx-20 mt-4">
                         <h3 class="w-24">${data.message[i].nickname}</h3>
@@ -27,7 +27,7 @@ async function showPlayers() {
                     </div>
                     `
                 playerEl.innerHTML = playerInnerHTML
-    
+
                 board.appendChild(playerEl)
             }
         }
